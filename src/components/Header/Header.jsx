@@ -1,0 +1,33 @@
+import React, { useEffect, useState } from "react";
+import "../../style/header.css";
+import theme from "../../assets/icons8-sun.svg";
+import logo from '../../assets/icons8-geometry-glyph-neue-96.png'
+export default function Header({ className, onClick }) {
+
+  return (
+    <header className={`${"product-header"} ${className}`}>
+      <nav className={`${"product-navigation"}`}>
+        <div>
+          <div className={`${"product-icon"}`}>
+<img src={logo} alt="" />
+          </div>
+          <div className={`${"product-icon-overflow"}`}></div>
+          <div className={`w-full h-[100px] bg-[#7C5DFA] ${"product-logo"}`}>
+            
+            <div
+              className={`w-full bg-[#9277FF] ${"product-logo-overflow"}`}
+            ></div>
+          </div>
+        </div>
+      </nav>
+      <div className={`${"svg-icon-container"}`}>
+        <img
+         onClick={onClick}
+          src={theme}
+          alt=""
+          className={`${"svg-icon"}`}
+        />
+      </div>
+    </header>
+  );
+}

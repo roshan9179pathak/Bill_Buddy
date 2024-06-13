@@ -1,0 +1,73 @@
+:root{
+  --background-color: #141625
+}
+
+@media (min-width: 1024px) {
+  .product-header {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+  }
+
+  .product-navigation {
+    position: relative;
+  }
+
+  .product-icon {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+  }
+
+
+  /* .product-icon-overflow {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+  } */
+
+  .product-logo {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+  }
+  .product-logo-overflow {
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.2s linear;
+  }
+
+  .product-navigation:hover .product-logo-overflow {
+    height: 85px;
+  }
+
+    .svg-icon-container{
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+  .svg-icon {
+    width: 22px;
+    filter: invert(100%) grayscale(100%) brightness(80%) opacity(80%);
+  }
+
+  .svg-icon:hover{
+    filter: invert(1) grayscale(1) brightness(2);
+  }
+}

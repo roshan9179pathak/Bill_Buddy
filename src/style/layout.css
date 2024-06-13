@@ -1,0 +1,20 @@
+:root{
+  --background-color: #141625
+}
+
+body.light-theme{
+  --background-color: #ffffff;
+  --color: #ffffff
+}
+
+body{
+  background: var(--background-color)
+}
+
+@media (min-width: 1024px) {
+  .product-layout {
+    display: grid;
+    grid-template-columns: 102px auto;
+    
+  }
+}
