@@ -13,7 +13,7 @@ export default function SignUp() {
 
   return (
     <div className={`${"login-page"}`}>
-      <div className={`${"login-svg-container"}`}>
+      <div className={`${"login-svg-container"}`}>s
         <img src={sign_up_logo} alt="" className={`${"login-svg"}`} />
       </div>
 

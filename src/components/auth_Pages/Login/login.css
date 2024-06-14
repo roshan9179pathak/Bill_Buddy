@@ -23,7 +23,7 @@
     width: 80%;
   }
 
-  .login-component{
+  .login-component {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,21 +31,20 @@
     padding: 10px;
   }
 
-  
-
-  .login-wlcm{
+  .login-wlcm {
     color: #ffffff;
     font-size: 40px;
     font-weight: 600;
     margin-top: 80px;
   }
-  .login-wlcm-message{
+  .login-wlcm-message {
     font-size: 15px;
     color: #fff;
     margin: 10px 0;
   }
 
-.email , .password{
+  .email,
+  .password {
     border-radius: 10px;
     width: 60%;
     height: 50px;
@@ -53,16 +52,21 @@
     padding-left: 5px;
     border: none;
     outline: none;
-}
+  }
 
-.login-button{
+  .login-button {
     background: #fff;
-    color: #1E2139;
+    color: #1e2139;
     font-weight: 600;
     width: 100px;
     height: 40px;
     border-radius: 20px;
     margin-top: 10px;
-}
+  }
 
+  /* .signup-container{
+    position: absolute;
+    right: 15%;
+    bottom: 40px;
+  } */
 }
