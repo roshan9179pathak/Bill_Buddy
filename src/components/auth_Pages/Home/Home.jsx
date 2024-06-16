@@ -11,8 +11,8 @@ export default function Login() {
             <h2 className={'product-heading'}>Welcome Back!</h2>
             <p className={'product-message'}>We’re thrilled to see you again. <span className='text-[#7C5DFA]'>Log-In</span> so you can continue exploring all the amazing features we have in store.</p>
             <div className={`${'product-buttons-container'}`}>
-                <Button className='guest_button'>Guest Login</Button>
-                <Button onClick={()=>navigate('/login')} className='login_button'>Login</Button>
+                <Button onClick={()=> navigate('invoice')} className='guest_button'>Guest Login</Button>
+                <Button onClick={()=>navigate('login')} className='login_button'>Login</Button>
             </div>
         </div>
     )

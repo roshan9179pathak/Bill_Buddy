@@ -64,9 +64,73 @@
     margin-top: 10px;
   }
 
-  /* .signup-container{
-    position: absolute;
-    right: 15%;
-    bottom: 40px;
-  } */
+  
 }
+@media (min-width:600px) and (max-width:1023px) {
+  .login-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e2139;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .login-svg-container {
+    display: none;
+  }
+
+  .login-svg {
+    width: 80%;
+  }
+
+  .login-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .login-wlcm {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 80px;
+  }
+  .login-wlcm-message {
+    font-size: 15px;
+    color: #fff;
+    margin: 10px 0;
+  }
+
+  .email,
+  .password {
+    border-radius: 10px;
+    width: 60%;
+    height: 50px;
+    margin: 20px 0;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+  }
+
+  .login-button {
+    background: #fff;
+    color: #1e2139;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  
+}
+
+

@@ -71,3 +71,57 @@
     filter: invert(1) grayscale(1) brightness(2);
   }
 }
+
+
+@media (min-width:600px) and (max-width:1023px) {
+  .product-header {
+    position: relative;
+  }
+
+  .product-navigation {
+    position: relative;
+  }
+
+  .product-icon {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+  }
+
+  .product-logo {
+    width: 80px !important;
+    height: 80px !important;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .product-logo-overflow {
+    height: 40px !important;
+    border-bottom-right-radius: 20px;
+    
+    position: absolute;
+    bottom: 0;
+    transition: height 0.2s linear;
+  }
+
+  .svg-icon-container{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translate(-50%,-50%);
+  }
+
+.svg-icon {
+  width: 22px;
+  filter: invert(100%) grayscale(100%) brightness(80%) opacity(80%);
+}
+
+.svg-icon:hover{
+  filter: invert(1) grayscale(1) brightness(2);
+}
+}

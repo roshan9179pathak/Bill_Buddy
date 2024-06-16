@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Button({children , className, type,...props}) {
+function Button({children , className, type,...props},ref) {
     
 
     return (
@@ -9,8 +9,11 @@ export default function Button({children , className, type,...props}) {
         type={type}
         className={`${className} cursor-pointer`}
         {...props}
+        ref={ref}
         >
             {children}
         </button>
     )
 }
+
+export default React.forwardRef(Button)

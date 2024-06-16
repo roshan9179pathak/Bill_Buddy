@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap");
+@media (min-width: 1024px) {
+  body {
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .main-container {
+    position: relative;
+  }
+
+  .invo-heading {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50vw;
+    height: 15vh;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .invoice-count-container h2 {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  .invoice-count-container p {
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .filter-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filter-container h5 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .dropdown-icon {
+    width: 15px;
+    font-weight: 700;
+    filter: invert(1);
+    margin-left: 10px;
+  }
+
+  .invoice-button {
+    font-size: 15px;
+    margin-left: 10px;
+    background: #9277ff;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-button {
+    filter: invert(1);
+    width: 30px;
+    margin-right: 10px;
+    
+  }
+
+  .all-invoices-container{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50vw;
+   
+    margin-bottom: 10px;
+    
+    border-radius: 10px;
+  }
+
+  .single-invoice-container{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1E2139;
+    
+    width: 99%;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 0 10px;
+    transition: border 0.02s;
+  }
+
+  .single-invoice-container:hover{
+    border: 2px solid #4D3F99;
+  
+  }
+
+  .single-invoice-container img{
+    width: 20px;
+  }
+
+  .code-date{
+    display: flex;
+    justify-content: space-between;
+  }
+  .code-date p{
+    margin-right: 20px;
+  }
+
+  .code{
+    color: #fff;
+    font-weight: 600;
+  }
+  .date{
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .name{
+    color: #fff;
+  }
+
+  .amount{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .status{
+    text-align: center;
+    color: #33D69F;
+    background: #1F2C3F;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .status span{
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+  .caret-right{
+    filter: invert(1);
+    font-weight: bold;
+  }
+}
