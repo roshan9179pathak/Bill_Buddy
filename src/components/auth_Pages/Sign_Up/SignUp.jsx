@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signup.css";
 import { useForm } from "react-hook-form";
 import { Input, Button } from "../../index";
 import sign_up_logo from "../../../assets/signup.svg";
 import authservices from "../../../appwrite/auth";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../../../store/authslice";
 export default function SignUp() {
   const {
     register,
@@ -12,22 +14,27 @@ export default function SignUp() {
     formState: { errors },
   } = useForm();
 
-    const navigate = useNavigate()
+  const dispatch = useDispatch();
+  const [Errors,setErrors] = useState('')
+
+  const navigate = useNavigate();
 
   const signup = async (data) => {
-    
+    setErrors('')
     try {
       const userData = await authservices.createAccount(data);
-      console.log(userData,`userData`);
-      if(userData){
-        const currentUser = await authservices.getCurrentUser()
-        if(currentUser){
-          console.log(currentUser, `currentUser`);
-          navigate('/invoice')
+      console.log(userData, `userData`);
+      if (userData) {
+        const userData = await authservices.getCurrentUser();
+        if (userData) {
+          localStorage.setItem('userId', JSON.stringify(userData.$id));
+          localStorage.setItem('userData',JSON.stringify(userData))
+          dispatch(login(userData));
+          navigate(`/invoice/${userData.name}`);
         }
       }
     } catch (error) {
-      alert(error.message);
+     setErrors(error.message)
     }
   };
 
@@ -48,6 +55,11 @@ export default function SignUp() {
             className={`${"email"}`}
             {...register("name", {
               required: true,
+              validate: {
+                matchPatern: (value) =>
+                  /^[a-zA-Z]+(?: [a-zA-Z]+)*$/.test(value) ||
+                  "Please add Full and Last Name, ex- Jane Doe",
+              },
             })}
           />
 
@@ -82,10 +94,11 @@ export default function SignUp() {
               {errors.password.message}
             </p>
           )}
-          <Button type="submit" className={`${"login-button"}`}>
+          <Button type="submit" className={`${"login-button"} signUpButton`}>
             Signup
           </Button>
         </div>
+        <p className="text-red-600 text-[12px] text-center ">{Errors}</p>
       </form>
     </div>
   );

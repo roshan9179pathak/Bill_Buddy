@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Header } from "./components";
 import { Outlet } from "react-router-dom";
 import "./style/layout.css";
+
 export default function Layout() {
+
 
         const[theme,setTheme] = useState(false)
 
@@ -17,13 +19,14 @@ export default function Layout() {
                 document.body.classList.remove('light-theme')
             }
         },[theme])
-    
+
+       
 
   return (
     <div className={`h-screen w-screen ${"product-layout"}`}>
-      <Header className={`w-full bg-[#252945]`} onClick={changeTheme}/>
+      <Header className={`w-full bg-[#252945] z-[100]`} onClick={changeTheme}/>
 
-      <main className={``}>
+      <main>
         <Outlet />
       </main>
     </div>

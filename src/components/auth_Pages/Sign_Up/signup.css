@@ -4,29 +4,61 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+:root{
+  --bg-color: #1e2139
+}
+
+.light-theme{
+  --bg-color: #ffffff;
+  --border-color: #1e2139;
+  --color: #1e2139;
+  --input-bg-color: #1e2139;
+  --input-font-color: #ffffff;
+}
+
+body.light-theme input::placeholder{
+  color: #fff !important;
+}
+
 @media (min-width: 1024px) {
   .login-page {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #1e2139;
+    background: var(--bg-color);
     width: 70vw;
     height: 70vh;
     border-radius: 20px;
-
+    border: 2px solid var(--border-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+
 
   .login-svg-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   .login-svg {
     width: 80%;
+  }
+  body.light-theme .login-component .login-wlcm{
+   color: #1E2139;
+  }
+
+  body.light-theme .login-component .login-wlcm-message{
+    color: #1E2139 !important;
+    font-weight: 500;
+  }
+
+  body.light-theme .signUpButton{
+    background: var(--input-bg-color) !important;
+    color: var(--input-font-color);
   }
 
   .login-component {
@@ -48,6 +80,25 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 15px;
     color: #fff;
     margin: 10px 0;
+  }
+
+  body.light-theme .login-component .email{
+    background-color: var(--input-bg-color) !important;
+    color: var(--input-font-color);
+  }
+  body.light-theme .login-component .password{
+    background-color: var(--input-bg-color) !important;
+    color: var(--input-font-color);
+  }
+
+  body.light-theme .login-component .signup{
+    color: var(--input-bg-color);
+    font-weight: 600;
+  }
+
+  body.light-theme .login-component .signup  a{
+    color: #6C63FF;
+    font-weight: 600;
   }
 
   .email,

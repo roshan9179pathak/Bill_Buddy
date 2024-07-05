@@ -1,10 +1,12 @@
+
 @media (min-width: 1024px) {
+
   .login-page {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #1e2139;
+    background: #1d2457;
     width: 70vw;
     height: 70vh;
     border-radius: 20px;
@@ -46,7 +48,7 @@
   .email,
   .password {
     border-radius: 10px;
-    width: 60%;
+    width: 60% !important;
     height: 50px;
     margin: 10px 0;
     padding-left: 5px;
@@ -66,40 +68,45 @@
 
   
 }
-@media (min-width:600px) and (max-width:1023px) {
+@media (max-width:600px) {
+  
   .login-page {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #1e2139;
+    background: #1d2457;
     width: 70vw;
     height: 70vh;
     border-radius: 20px;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .login-svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: none;
   }
 
   .login-svg {
     width: 80%;
+    display: none;
   }
 
   .login-component {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 10px;
   }
 
   .login-wlcm {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600;
     margin-top: 80px;
   }
@@ -107,14 +114,15 @@
     font-size: 15px;
     color: #fff;
     margin: 10px 0;
+    text-align: center;
   }
 
   .email,
   .password {
     border-radius: 10px;
-    width: 60%;
+    width: 80% !important;
     height: 50px;
-    margin: 20px 0;
+    margin: 10px 0;
     padding-left: 5px;
     border: none;
     outline: none;
@@ -130,7 +138,6 @@
     margin-top: 10px;
   }
 
-  
 }
 
 
