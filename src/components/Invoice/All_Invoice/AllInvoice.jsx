@@ -87,6 +87,8 @@ else{
 
   }
 
+
+
   return (
     <div className={`w-full h-full ${"main-container"}`}>
       <div className={`invo-heading`}>
@@ -98,14 +100,14 @@ else{
         <div className="filter-container">
           <div className="status-filter-container">
             <div>
-            <h5 onClick={handleFilter}>Filter by status</h5>
+            <h5 onClick={handleFilter}>Filter <span>by status</span></h5>
             <img src={logo} alt="svg" className="dropdown-icon" />
             </div>
           </div>
           
           <Button className={`${"invoice-button"}`} onClick={()=>navigate('/add/new')}>
             <img src={add} alt="" className="add-button" />
-            New Invoice
+            New <span>Invoice</span>
           </Button>
         </div>
 

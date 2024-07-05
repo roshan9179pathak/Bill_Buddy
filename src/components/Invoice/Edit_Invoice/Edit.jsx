@@ -112,7 +112,7 @@ export default function Edit() {
         <div className="bill-to">
           <div className="one">
             <div>
-              <p>Invoice Date</p>
+              <p><span>Invoice</span> Date</p>
               <p>{invoice.invoice_date}</p>
             </div>
           </div>

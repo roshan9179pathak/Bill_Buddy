@@ -66,6 +66,11 @@
     margin-top: 10px;
   }
 
+    body.light-theme .login-button{
+      background: #252945;
+      color: #fff;
+      font-weight: 500 !important;
+    }
   
 }
 @media (max-width:600px) {
@@ -75,13 +80,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #1d2457;
-    width: 70vw;
+    background: #1E2139;
+    width: 100%;
     height: 70vh;
-    border-radius: 20px;
-
     display: grid;
     grid-template-columns: 100%;
+  }
+
+  body.light-theme .login-page{
+    background: #F3F0E8;
   }
 
   .login-svg-container {
@@ -105,16 +112,26 @@
   }
 
   .login-wlcm {
-    color: #ffffff;
+    color: #fff;
     font-size: 25px;
     font-weight: 600;
     margin-top: 80px;
   }
+
+  body.light-theme .login-wlcm{
+    color: #252945;
+  }
+
   .login-wlcm-message {
     font-size: 15px;
     color: #fff;
     margin: 10px 0;
     text-align: center;
+    font-weight: 700;
+  }
+
+  body.light-theme .login-wlcm-message{
+    color: #252945;
   }
 
   .email,
@@ -128,6 +145,10 @@
     outline: none;
   }
 
+  ::placeholder{
+    color: #252945 !important;
+  }
+
   .login-button {
     background: #fff;
     color: #1e2139;
@@ -138,6 +159,22 @@
     margin-top: 10px;
   }
 
+  .signup-container p{
+    color: #fff;
+    font-weight: 700;
+  }
+
+  body.light-theme .signup-container p{
+    color: #252945;
+  }
+
+  .email-password input::placeholder{
+    color: #1e2139 !important;
+  }
+
 }
 
+@media (min-width:601px) and (max-width:1023px){
+  
+}
 

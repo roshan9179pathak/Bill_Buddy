@@ -44,7 +44,7 @@ const Login = ()=> {
           To be connected, please login with your email & password
         </p>
 
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center email-password">
         <Input
           type="text"
           placeholder="Your Email goes here..."

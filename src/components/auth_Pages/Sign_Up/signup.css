@@ -17,7 +17,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 body.light-theme input::placeholder{
-  color: #fff !important;
+  color: #252945 !important;
 }
 
 @media (min-width: 1024px) {
@@ -120,5 +120,11 @@ body.light-theme input::placeholder{
     height: 40px;
     border-radius: 20px;
     margin-top: 10px;
+  }
+}
+
+@media (max-width:600px) {
+  ::placeholder{
+    color: #1e2139 !important;
   }
 }

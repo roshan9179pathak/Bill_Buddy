@@ -23,11 +23,19 @@
         align-items: center;
     }
 
+    body.light-theme .logout-main-container div{
+        background: #F3F0E8;
+    }
+
     .logout-main-container div h2{
         margin-top: 40px;
         font-size: 25px;
         font-weight: 500;
         color: #fff;
+    }
+
+    body.light-theme .logout-main-container div h2{
+        color: #1E2139;
     }
 
     .logout-main-container div button{
@@ -45,4 +53,56 @@
         transform: scale(1.2);
     }
 
+}
+
+@media (max-width:600px){
+    .logout-main-container{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .logout-main-container div{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #1E2139;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    body.light-theme .logout-main-container div{
+        background: #F3F0E8;
+    }
+
+    .logout-main-container div h2{
+        margin-top: 40px;
+        font-size: 25px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+        body.light-theme .logout-main-container div h2{
+            color: #252945;
+        }
+
+    .logout-main-container div button{
+        margin-top: 80px;
+        font-weight: 500;
+        color: #fff;
+        background: #FD356E;
+        width: 100px;
+        height: 40px !important;
+        border-radius: 10px;
+        transition: transform 0.2s linear;
+    }
+
+    .logout-main-container div button:hover{
+        transform: scale(1.2);
+    }
 }
