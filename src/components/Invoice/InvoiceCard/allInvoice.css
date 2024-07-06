@@ -399,3 +399,140 @@
     font-size: 30px;
   }
 }
+
+@media (min-width:601px) and (max-width: 1023px){
+  body {
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .all-invoices-container{
+    width: 100vw;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    z-index: 1;
+  }
+
+  .single-invoice-container{
+    display: grid;
+    grid-template-columns: 40% 30% 20% 10%;
+    align-items: center;
+    background: #1E2139;
+    padding: 0 10px !important;
+    width: 99%;
+    height: 90px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+  }
+
+  body.light-theme .single-invoice-container{
+    background: #f3f0e8 !important;
+  }
+
+    .single-invoice-container p{
+      color: #fff !important;
+    }
+
+    body.light-theme .single-invoice-container p{
+      color: var(--text-color) !important;
+      font-weight: 600;
+    }
+
+ 
+
+  .single-invoice-container img{
+    width: 20px;
+  }
+
+  .code-date{
+   display: grid;
+   grid-template-columns: 1fr 2fr !important;
+ 
+  }
+  .code{
+    margin-right: 10px !important;
+    font-size: 25px;
+  }
+  .date{
+    margin-left: 10px !important;
+    font-size: 25px;
+
+  }
+
+  .name{
+    text-align: left;
+    font-size: 25px;
+
+  }
+
+  .amount{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center; 
+    font-weight: 600 !important;
+    font-size: 25px !important;
+  }
+
+  .status{
+    background: #1F2C3F;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+  }
+
+  body.light-theme .status{
+    background: #f3f0e8;
+  }
+
+  body.light-theme .status p.paid{
+    color: #027623 !important;
+    font-weight: 700;
+    font-size: 25px;
+
+  }
+
+  .status p.paid{
+    color: #27C99F !important;
+    font-weight: 600;
+    font-size: 25px;
+
+  }
+
+  body.light-theme .status p.pending{
+    color: #FF8F00 !important;
+    font-weight: 700;
+    font-size: 25px;
+
+  }
+
+  .status p.pending{
+    color: #FF8F00 !important;
+    font-weight: 600;
+    font-size: 25px;
+
+  }
+  .right{
+    filter: invert(1);
+    margin-left: 10px;
+    display: none;
+  }
+  body.light-theme .right{
+    filter: invert(0);
+  }
+
+
+  .loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+  }
+}

@@ -18,6 +18,7 @@ export default function Header({ className, onClick }) {
     }
   }, [authStatus, isAuthenticated]);
 
+  console.log(authStatus);
 
   return (
     <header className={`${"product-header"} ${className}`}>
@@ -60,11 +61,11 @@ export default function Header({ className, onClick }) {
         <img onClick={onClick} src={theme} alt="" className={`${"svg-icon"}`} />
       </div>
    
-        <Link to={"/logout"}>
+       {authStatus &&  <Link to={"/logout"}>
           <div className={`logout-container`}>
             <img src={logout} alt="" />
           </div>
-        </Link>
+        </Link>}
     
     </header>
   );
