@@ -10,8 +10,8 @@ const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Comp.Layout />}>
    <Route path='' element={<Comp.Home />} /> 
     
-   <Route path='users/login' element={<Comp.Login />} />
- <Route path='signup' element={<Comp.SignUp />} />
+   <Route path='/users/login' element={<Comp.Login />} />
+ <Route path='/signup' element={<Comp.SignUp />} />
    <Route path='invoice/:username' element={<Comp.AllInvoice />} />
    <Route path='add/:invoiceCode' element={<Comp.InvoiceForm />} />
    <Route path='edit/:invoiceCode' element={<Comp.Edit />} />
