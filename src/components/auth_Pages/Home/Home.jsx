@@ -22,7 +22,7 @@ export default function Login() {
             <p className={'product-message'}>We’re thrilled to see you again. <span className='text-[#7C5DFA]'>Log-In</span> so you can continue exploring all the amazing features we have in store.</p>
             <div className={`${'product-buttons-container'}`}>
                 <Button onClick={()=> navigate('invoice/guest')} className='guest_button hidden'>Guest Login</Button>
-                <Button onClick={()=>navigate('users/login')} className='login_button'>Login</Button>
+                <Button onClick={()=>navigate('/users/login')} className='login_button'>Login</Button>
             </div>
         </div>
     ) : <div></div>

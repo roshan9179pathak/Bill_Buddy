@@ -6,19 +6,18 @@ import { Link } from "react-router-dom";
 import logout from "../../assets/logout.svg";
 import { useSelector } from "react-redux";
 export default function Header({ className, onClick }) {
-  const authStatus = useSelector((state) => state.auth.status);
-  const [isAuthenticated, setIsAuthenticated] = useState(authStatus);
+  const authStatus = useSelector((state) => state.auth.status)
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [userData, setUserData] = useState();
 
   useEffect(() => {
     const userData = JSON.parse(localStorage.getItem("userData"));
     if (userData) {
-      setIsAuthenticated(authStatus);
+      setIsAuthenticated(true);
       setUserData(userData);
     }
-  }, [authStatus, isAuthenticated]);
+  }, []);
 
-  console.log(authStatus);
 
   return (
     <header className={`${"product-header"} ${className}`}>
@@ -58,10 +57,11 @@ export default function Header({ className, onClick }) {
         )}
       </nav>
       <div className={`${"svg-icon-container"}`}>
+      {false}
         <img onClick={onClick} src={theme} alt="" className={`${"svg-icon"}`} />
       </div>
    
-       {authStatus &&  <Link to={"/logout"}>
+       {<Link to={"/logout"}>
           <div className={`logout-container`}>
             <img src={logout} alt="" />
           </div>

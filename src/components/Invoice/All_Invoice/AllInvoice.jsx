@@ -87,8 +87,6 @@ else{
 
   }
 
-
-
   return (
     <div className={`w-full h-full ${"main-container"}`}>
       <div className={`invo-heading`}>

@@ -307,7 +307,7 @@ export default function InvoiceForm({ post }) {
         </div>
 
         <div className="button-container">
-          <Button onClick={() => navigate("/invoice")}>Discard</Button>
+          <Button onClick={() => navigate(`/invoice/${userData.name}`)}>Discard</Button>
           <Button type="submit">Save</Button>
         </div>
       </form>
