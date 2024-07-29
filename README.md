@@ -1,8 +1,10 @@
-# React + Vite
+# Bill Buddy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bill Buddy is a full-stack expense management application. Incorporated features like file uploads, pagination, search, sort, filter, loader, JWT (JSON Web Tokens) for secure authentication/authorization, and a responsive user interface. Link: https://bill-buddy-beta.vercel.app 
 
-Currently, two official plugins are available:
+### Credentials
+(user1@gmail.com/User1@123)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tools/Technologies used:
+
+`React` `Redux Toolkit` `Tailwind CSS` `CSS` `JavaScript` `Node.js` `Express.js` `MongoDB`
